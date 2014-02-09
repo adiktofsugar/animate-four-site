@@ -1,0 +1,37 @@
+<div class="row">
+	<div class="medium-6 columns">
+		<% if @user.name %>
+			<h1><%= @user.name %></h1>
+		<% else %>
+
+			<form class="callout-form" action="<%= user_path(@user.id) %>" method="post">
+				<input type="hidden" name="_method" value="put" />
+				<input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+				<div class="row collapse">
+					<div class="medium-8 columns">
+						<input type="text" name="name" placeholder="You have no name." />
+					</div>
+					<div class="medium-4 columns">
+						<button type="submit" class="button postfix">Set it</button>
+					</div>
+				</div>
+			</form>
+		<% end %>
+	</div>
+</div>
+
+<div class="row">
+	<h2>Things you bought</h2>
+
+	<ul class="block-grid">
+		<% if @bought_items.length <= 0 %>
+			<p class="alert-box info">Nothing.</p>
+		<% else %>
+			<% @bought_items.each do |item| %>
+			<li>
+				<h5><%= item.title %></h5>
+			</li>
+			<% end %>
+		<% end %>
+	</ul>
+</div>

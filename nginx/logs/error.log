@@ -1,0 +1,112 @@
+2014/02/08 14:29:18 [notice] 28928#0: using the "kqueue" event method
+2014/02/08 14:29:18 [notice] 28928#0: nginx/1.2.1
+2014/02/08 14:29:18 [notice] 28928#0: built by gcc 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
+2014/02/08 14:29:18 [notice] 28928#0: OS: Darwin 12.2.0
+2014/02/08 14:29:18 [notice] 28928#0: hw.ncpu: 8
+2014/02/08 14:29:18 [notice] 28928#0: net.inet.tcp.sendspace: 131072
+2014/02/08 14:29:18 [notice] 28928#0: kern.ipc.somaxconn: 128
+2014/02/08 14:29:18 [notice] 28928#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2014/02/08 14:29:18 [notice] 28929#0: start worker processes
+2014/02/08 14:29:18 [notice] 28929#0: start worker process 28930
+2014/02/08 14:29:18 [notice] 28929#0: start worker process 28931
+2014/02/08 14:29:18 [notice] 28929#0: start worker process 28932
+2014/02/08 14:29:18 [notice] 28929#0: start worker process 28933
+2014/02/08 14:29:18 [notice] 28929#0: start worker process 28934
+2014/02/08 14:29:18 [notice] 28929#0: signal 23 (SIGIO) received
+2014/02/08 14:29:18 [notice] 28929#0: signal 23 (SIGIO) received
+2014/02/08 14:29:18 [notice] 28929#0: signal 23 (SIGIO) received
+2014/02/08 14:29:18 [notice] 28929#0: signal 23 (SIGIO) received
+2014/02/08 14:29:18 [notice] 28929#0: signal 23 (SIGIO) received
+2014/02/08 14:29:18 [notice] 28929#0: signal 23 (SIGIO) received
+2014/02/08 14:29:32 [error] 28930#0: *1 open() "/Users/smccollum/dev/yup/media/test" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /media/test HTTP/1.1", host: "127.0.0.1"
+2014/02/08 14:29:49 [info] 28930#0: *8 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:29:49 [info] 28930#0: *7 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:29:49 [info] 28930#0: *6 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:29:49 [info] 28930#0: *5 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:29:49 [info] 28930#0: *4 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:30:09 [info] 28930#0: *13 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:30:09 [info] 28930#0: *12 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:30:09 [info] 28930#0: *11 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:30:09 [info] 28930#0: *10 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:30:09 [info] 28930#0: *9 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:32:42 [info] 28930#0: *20 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:32:42 [info] 28930#0: *19 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:32:42 [info] 28930#0: *18 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:32:42 [info] 28930#0: *17 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:32:42 [info] 28930#0: *21 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:35:55 [info] 28930#0: *48 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:35:55 [info] 28930#0: *47 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:36:15 [info] 28930#0: *57 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:36:15 [info] 28930#0: *56 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:55:10 [error] 28930#0: *93 open() "/Users/smccollum/dev/yup/media/css/main.css" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /media/css/main.css HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2014/02/08 14:55:20 [info] 28930#0: *96 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 14:57:24 [info] 28930#0: *103 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:02:18 [info] 28930#0: *113 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:02:38 [info] 28934#0: *115 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:12:55 [info] 28934#0: *119 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:12:55 [info] 28934#0: *118 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:12:55 [info] 28934#0: *122 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:12:55 [info] 28934#0: *121 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:12:55 [info] 28934#0: *120 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:15:09 [info] 28934#0: *130 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:18:49 [info] 28934#0: *138 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:19:19 [info] 28934#0: *140 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:19:39 [info] 28934#0: *142 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:20:59 [info] 28934#0: *149 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:22:49 [info] 28934#0: *156 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:23:09 [info] 28934#0: *159 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:23:49 [info] 28934#0: *161 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:24:09 [info] 28934#0: *164 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:24:49 [info] 28934#0: *166 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:25:19 [info] 28934#0: *168 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:26:38 [info] 28934#0: *170 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:27:18 [info] 28934#0: *173 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:27:38 [info] 28934#0: *175 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:28:28 [info] 28934#0: *177 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:29:28 [info] 28934#0: *179 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:29:48 [info] 28934#0: *182 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:30:28 [info] 28934#0: *185 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:31:18 [info] 28934#0: *187 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:41:47 [info] 28934#0: *199 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:43:37 [info] 28934#0: *205 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:43:57 [info] 28934#0: *208 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:45:27 [info] 28934#0: *216 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:45:27 [info] 28934#0: *215 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:45:27 [info] 28934#0: *214 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:45:27 [info] 28934#0: *213 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:45:27 [info] 28934#0: *217 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:45:47 [info] 28934#0: *223 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:55:07 [info] 28934#0: *242 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:55:26 [info] 28934#0: *244 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:55:56 [info] 28934#0: *249 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:55:56 [info] 28934#0: *248 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:55:56 [info] 28934#0: *247 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:55:56 [info] 28934#0: *246 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 15:56:37 [error] 28934#0: *240 upstream timed out (60: Operation timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /products HTTP/1.1", upstream: "http://127.0.0.1:3000/products", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2014/02/08 16:00:16 [info] 28933#0: *265 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 16:01:16 [error] 28933#0: *251 upstream timed out (60: Operation timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /products HTTP/1.1", upstream: "http://127.0.0.1:3000/products", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2014/02/08 16:03:26 [info] 28933#0: *273 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 16:04:26 [info] 28933#0: *276 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 16:04:56 [info] 28933#0: *279 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 21:00:16 [emerg] 30648#0: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2014/02/08 21:00:16 [notice] 30648#0: try again to bind() after 500ms
+2014/02/08 21:00:16 [emerg] 30648#0: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2014/02/08 21:00:16 [notice] 30648#0: try again to bind() after 500ms
+2014/02/08 21:00:16 [emerg] 30648#0: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2014/02/08 21:00:16 [notice] 30648#0: try again to bind() after 500ms
+2014/02/08 22:02:59 [info] 28933#0: *296 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 22:02:59 [info] 28933#0: *295 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 22:02:59 [info] 28933#0: *294 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 22:02:59 [info] 28933#0: *298 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 22:02:59 [info] 28933#0: *297 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 22:07:08 [info] 28933#0: *303 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 22:07:08 [info] 28933#0: *302 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 22:14:04 [info] 28933#0: *325 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 22:14:04 [info] 28933#0: *324 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 22:42:04 [info] 28933#0: *336 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 23:06:33 [info] 28930#0: *416 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 23:38:30 [info] 28930#0: *508 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/08 23:56:04 [info] 28930#0: *544 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/09 00:23:13 [info] 28930#0: *630 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/09 00:23:43 [info] 28930#0: *632 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 
+2014/02/09 00:45:02 [info] 28930#0: *702 client prematurely closed connection while reading client request line, client: 127.0.0.1, server: 

@@ -1,0 +1,29 @@
+<h2>Sign up</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div><%= f.label :password %><br />
+  <%= f.password_field :password %></div>
+
+  <div><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></div>
+
+  
+
+	<div class="button-bar">
+  	<ul class="button-group">
+  		<li>
+  		<%= f.submit "Sign up", :class => "button" %>
+  		</li>
+  	</ul>
+
+  	<ul class="button-group">
+  	<%= render :partial=>"devise/shared/links", :locals => {:render_as_list => true} %>
+  	</ul>
+  </div>
+
+<% end %>

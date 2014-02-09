@@ -1,0 +1,24 @@
+
+
+
+<div class="row">
+	<h3>Popular</h3>
+	<ul class="small-block-grid-3">
+		<% @popular_products.each do |product| %>
+		<li>
+			<h5><%= product.name %></h5>
+		</li>
+		<% end %>
+	</ul>
+</div>
+
+<div class="row">
+	<h3>Hand-picked</h3>
+	<ul class="small-block-grid-3">
+		<% @picked_products.each do |product| %>
+		<li>
+			<h5><%= product.name %></h5>
+		</li>
+		<% end %>
+	</ul>
+</div>

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo nginx -c $(echo `pwd`)/nginx/nginx.conf $1

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whatever its called</title>
+
+	<%= csrf_meta_tag %>
+
+	<link rel="stylesheet" href="/media/vendor/foundation/css/normalize.css" />
+	<link rel="stylesheet" href="/media/vendor/foundation/css/foundation.css" />
+	<link rel="stylesheet" href="/media/css/main.css" />
+	
+
+	<script src="/media/vendor/jquery/jquery.min.js"></script>
+	<script src="/media/vendor/modernizr/modernizr.js"></script>
+	<script src="/media/vendor/foundation/js/foundation.min.js"></script>
+
+</head>
+<body>
+
+<% content_for :alert do %>
+	<% if notice %><p class="top-alert alert-box info"><%= notice %></p><% end %>
+	<% if alert %><p class="top-alert alert-box warning"><%= alert %></p><% end %>
+<% end %>
+
+<!-- This is until it needs to be something reasonable, so at least i can see when there are problems -->
+<%= yield(:alert) %>
+
+<div id="main-top-bar-container" class="contain-to-grid">
+	<nav class="top-bar" data-topbar>
+		<ul class="title-area">
+			<li class="name">
+				<h1><a href="/">Whatever this is called</a></h1>
+			</li>
+			<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+		</ul>
+
+		<section class="top-bar-section">
+			<!-- Right Nav Section -->
+			<ul class="right">
+				<% if any_signed_in? %>
+				<li class="has-dropdown">
+					<a href="<%= user_path(current_user.id) %>">Hey <%= current_user.email %></a>
+					<ul class="dropdown">
+						<li><a href="<%= destroy_user_session_path %>">Sign Out</a></li>
+					</ul>
+				</li>
+				<% else %>
+				<li class="active">
+					<a href="<%= new_user_session_path %>">Sign in</a>
+				</li>
+				<% end %>
+
+			</ul>
+
+		</section>
+	</nav>
+</div>
+<script>
+$('#main-top-bar-container').foundation();
+</script>
+
+
+<div class="row">
+
+<%= yield %>
+
+</div>
+
+
+
+</body>
+</html>
