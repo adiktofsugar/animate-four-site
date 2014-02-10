@@ -1,19 +1,25 @@
 class ProductsController < ApplicationController
+  before_filter :authenticate_user!
   def new
+    @product = Product.new
   end
 
   def edit
   end
 
   def index
+    @products = Product.all
   end
 
   def create
-    new_product = Product.new(post_params)
+    debugger
+    new_product = Product.new(params[:product])
+
     saved = new_product.save
 
     if saved
-      redirect_to params[:next] or :index
+      flash[:notice] = "Successful upload!"
+      redirect_to :action => :index
       return
     end
 
@@ -25,10 +31,4 @@ class ProductsController < ApplicationController
   def delete
   end
 
-  private
-
-  def post_params
-    allowed = [:name]
-    request.POST.select {|k,v| allowed.include? k.to_sym }
-  end
 end

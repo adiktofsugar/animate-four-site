@@ -1,5 +1,20 @@
 @import 'settings';
-@import 'foundation';
+
+
+$include-html-classes: false;
+$include-print-styles: false;
+$include-html-global-classes: false;
+@import 'vendor/foundation/scss/foundation/functions';
+
+
+@import 'font-grammatika';
+
+.top-bar .title-area .name h1 a{
+	font-family: "as_grammatika-light";
+	font-size: rem-calc(34);
+	background: $color-highlight;
+	color: white;
+}
 
 .top-alert.alert-box {
 	margin-bottom:0;

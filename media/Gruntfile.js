@@ -4,11 +4,16 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		clean: {
-			css: ['css/main.css']
+			css: ['css/main.css', 'css/foundation.css']
 		},
 		sass: {
 			options: {
 				loadPath: ['scss/', 'vendor/foundation/scss/']
+			},
+			foundation: {
+				files: {
+					'css/foundation.css': 'scss/foundation.scss'
+				}
 			},
 			main: {
 				files: {
@@ -16,7 +21,12 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		watch: {}
+		watch: {
+			"css": {
+				files: 'scss/**',
+				tasks: ['build-css']
+			}
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
@@ -24,7 +34,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// actual tasks
-	grunt.registerTask('build-css', ['clean:css', 'sass:main']);
+	grunt.registerTask('build-css', ['clean:css', 'sass:foundation', 'sass:main']);
 
 	// convenience
 	grunt.registerTask('default', ['build-css']);

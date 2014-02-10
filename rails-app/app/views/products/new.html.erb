@@ -1,1 +1,14 @@
-<%= render 'form' %>
+<h1>Make a new thingy!</h1>
+
+<%= form_for(@product, :action => :create) do |f| %>
+	
+	<%= f.text_field(:name, :placeholder=>"Name") %>
+	
+	<%= f.label(:preview) %>
+	<%= f.file_field(:preview) %>
+	
+	<%= f.label(:file) %>
+	<%= f.file_field(:file) %>
+	
+	<button class="button" type="submit">Create new product</button>
+<% end %>

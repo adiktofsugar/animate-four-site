@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Whatever its called</title>
+	<title>AnimateFour</title>
 
 	<%= csrf_meta_tag %>
 
 	<link rel="stylesheet" href="/media/vendor/foundation/css/normalize.css" />
-	<link rel="stylesheet" href="/media/vendor/foundation/css/foundation.css" />
+	<link rel="stylesheet" href="/media/css/foundation.css" />
 	<link rel="stylesheet" href="/media/css/main.css" />
 	
 
@@ -29,7 +29,7 @@
 	<nav class="top-bar" data-topbar>
 		<ul class="title-area">
 			<li class="name">
-				<h1><a href="/">Whatever this is called</a></h1>
+				<h1><a href="/">AnimateFour</a></h1>
 			</li>
 			<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
 		</ul>
@@ -37,10 +37,11 @@
 		<section class="top-bar-section">
 			<!-- Right Nav Section -->
 			<ul class="right">
-				<% if any_signed_in? %>
+				<% if user_signed_in? %>
 				<li class="has-dropdown">
 					<a href="<%= user_path(current_user.id) %>">Hey <%= current_user.email %></a>
 					<ul class="dropdown">
+						<li><a href="<%= new_product_path %>">Add Product</a></li>
 						<li><a href="<%= destroy_user_session_path %>">Sign Out</a></li>
 					</ul>
 				</li>

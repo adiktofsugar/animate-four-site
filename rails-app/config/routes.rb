@@ -1,17 +1,12 @@
 RailsApp::Application.routes.draw do
 
 
+  devise_for :users, :skip => [:registrations, :confirmations]
   devise_scope :user do
     get 'sign-in' => 'devise/sessions#new', :as => :new_user_session
     post 'sign-in' => 'devise/sessions#create', :as => :user_session
     match 'get-out' => 'devise/sessions#destroy', :as => :destroy_user_session
 
-    post 'users/password' => 'devise/passwords#create', :as => :user_password
-    get '/users/password/new' => 'devise/passwords#new', :as => :new_user_password
-    get '/users/password/edit' => 'devise/passwords#edit', :as => :edit_user_password
-    put '/users/password' => 'devise/passwords#update'
-    get '/users/cancel' => 'devise/registrations#cancel', :as => :cancel_user_registration
-    
     post 'sign-up' => 'devise/registrations#create', :as => :user_registration
     get 'sign-up' => 'devise/registrations#new', :as => :new_user_registration
     get 'sign-up/edit' => 'devise/registrations#edit', :as => :edit_user_registration
