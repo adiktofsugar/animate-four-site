@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140210020658) do
+ActiveRecord::Schema.define(:version => 20140210024914) do
 
   create_table "products", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20140210020658) do
     t.datetime "updated_at", :null => false
     t.string   "preview"
     t.string   "file"
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|

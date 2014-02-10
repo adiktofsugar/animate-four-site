@@ -20,18 +20,40 @@
 	</div>
 
 	<div class="row">
-		<h3>Things you bought</h3>
+		<div class="medium-6 columns">
+			<h3>Things you created</h3>
 
-		<% if @bought_items.length <= 0 %>
-			<p class="alert-box info">Nothing.</p>
-		<% else %>
-			<ul class="block-grid">
-				<% @bought_items.each do |item| %>
-				<li>
-					<h5><%= item.title %></h5>
-				</li>
-				<% end %>
-			</ul>
-		<% end %>
+			<% if @products.length <= 0 %>
+				<p class="alert-box info">Nothing.</p>
+			<% else %>
+				<ul class="block-grid">
+					<% @products.each do |product| %>
+					<li>
+						<h5><%= product.name %></h5>
+						<div>
+							<img src="<%= product.preview %>"/>
+							<aside><b>Preview</b> - <%= product.preview %></aside>
+						</div>
+						<p><b>File</b> - <%= product.file %></p>
+					</li>
+					<% end %>
+				</ul>
+			<% end %>
+		</div>
+		<div class="medium-6 columns">
+			<h3>Things you bought</h3>
+
+			<% if @bought_items.length <= 0 %>
+				<p class="alert-box info">Nothing.</p>
+			<% else %>
+				<ul class="block-grid">
+					<% @bought_items.each do |item| %>
+					<li>
+						<h5><%= item.title %></h5>
+					</li>
+					<% end %>
+				</ul>
+			<% end %>
+		</div>
 	</div>
 </div>

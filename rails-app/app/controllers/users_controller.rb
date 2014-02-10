@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   def show
     @bought_items = []
+    @products = @user.products
   end
 
   def update

@@ -12,9 +12,8 @@ class ProductsController < ApplicationController
   end
 
   def create
-    debugger
-    new_product = Product.new(params[:product])
-
+    
+    new_product = current_user.products.build(params[:product])
     saved = new_product.save
 
     if saved

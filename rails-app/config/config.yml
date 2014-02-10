@@ -1,0 +1,5 @@
+all:
+  devise_password_min_length: 8
+
+development:
+  devise_password_min_length: 1
